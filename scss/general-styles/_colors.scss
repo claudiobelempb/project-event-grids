@@ -12,8 +12,8 @@ $colors-theme-default: (
   "instagram": hsl(329, 100%, 50%),
 );
 
-@function color-theme($clr-theme) {
-  @return map-get($colors-theme, $clr-theme);
+@function color-theme-default($clr-theme-default) {
+  @return map-get($colors-theme-default, $clr-theme-default);
 }
 
 $colors-theme: (
@@ -60,8 +60,4 @@ $colors-social: (
 
 @function color-social($clr-social) {
   @return map-get($colors-social, $clr-social);
-}
-
-h1 {
-  color: color-theme("2");
 }
