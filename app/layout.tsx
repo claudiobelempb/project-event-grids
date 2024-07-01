@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import './main-style.scss';
+import '../scss/main-style.scss';
 
 export const metadata: Metadata = {
   title: 'EventGrid - Book Your Next Event',
