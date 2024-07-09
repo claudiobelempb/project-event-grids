@@ -1,0 +1,7 @@
+@use "../general-styles/colors" as c;
+
+@media screen and (min-width: 1500px) {
+  .header {
+    background-color: c.color('red-500');
+  }
+}

@@ -1,0 +1,53 @@
+@use "../general-styles/colors" as c;
+@use "../general-styles/typography" as f;
+
+.title {
+  font-size: f.fd(m1);
+  font-weight: f.fw(900);
+  color: c.color("gray-100");
+  text-align: center;
+}
+
+.sub-title {
+  font-size: f.fd(m1);
+  font-weight: f.fw(400);
+  transition: all 0.25s ease-in-out;
+  color: c.color(violet-500);
+
+  // @media (hover) {
+  //   & {
+  //     color: clrs.color-type("2");
+  //   }
+
+  //   &:hover {
+  //     color: clrs.color-type("3");
+  //   }
+  // }
+}
+
+.mini-title {
+  font-size: f.fs(s1);
+  color: c.color(violet-500);
+
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 0.2rem;
+    width: 2rem;
+    transform: translateY(-50%);
+    background-color: c.color(red-500);
+  }
+
+  &::before {
+    left: -60%;
+  }
+
+  &::after {
+    right: -60%;
+  }
+}

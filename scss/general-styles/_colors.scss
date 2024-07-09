@@ -1,4 +1,4 @@
-$colors-theme-default: (
+$color: (
   "gray-100": hsl(0 0% 100%),
   "gray-200": hsl(0, 0%, 96%),
   "gray-300": hsl(216 33% 97%),
@@ -12,8 +12,8 @@ $colors-theme-default: (
   "instagram": hsl(329, 100%, 50%),
 );
 
-@function color-theme-default($clr-theme-default) {
-  @return map-get($colors-theme-default, $clr-theme-default);
+@function color($clr-theme-default) {
+  @return map-get($color, $clr-theme-default);
 }
 
 $colors-theme: (
@@ -61,3 +61,5 @@ $colors-social: (
 @function color-social($clr-social) {
   @return map-get($colors-social, $clr-social);
 }
+
+html[data-theme="dark"] {}

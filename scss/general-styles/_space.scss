@@ -83,55 +83,55 @@ $pad-st-h: (
 // -------------------- Orientation
 //       x      = vertical   (top & bottom)
 $space-d-x: (
-  "l": calc(2rem + 12vh),
-  "mc": calc(1rem + 8vh),
-  "m": calc(1rem + 6vh),
-  "sc": calc(1rem + 4vh),
-  "s": calc(1rem + 1vh),
+  "s1": calc(1rem + 1vh),
+  "s2": calc(1rem + 4vh),
+  "m1": calc(1rem + 6vh),
+  "m2": calc(1rem + 8vh),
+  "l1": calc(2rem + 12vh),
 );
 
-@function space-d-x($space-dx) {
+@function sdx($space-dx) {
   @return map-get($space-d-x, $space-dx);
 }
 
 // -------------------- Orientation
 //       y      = horizontal (right & left)
 $space-d-y: (
-  "l": calc(2rem + 12vw),
-  "mc": calc(1rem + 8vw),
-  "m": calc(1rem + 6vw),
-  "sc": calc(1rem + 4vw),
-  "s": calc(1rem + 2vw),
-  "xs": calc(1rem + 1vw),
+  "s1": calc(1rem + 1vw),
+  "s2": calc(1rem + 2vw),
+  "s3": calc(1rem + 4vw),
+  "m1": calc(1rem + 6vw),
+  "m2": calc(1rem + 8vw),
+  "l1": calc(2rem + 12vw),
 );
 
-@function space-d-y($space-dy) {
+@function sdy($space-dy) {
   @return map-get($space-d-y, $space-dy);
 }
 
 // -------------------- Orientation
 //       x      = vertical   (top & bottom)
 $space-st-x: (
-  "xl": 4rem,
-  "lc": 3rem,
-  "l": 2rem,
-  "m": 1.5rem,
-  "s": 1rem,
+  "s1": 1rem,
+  "m1": 1.5rem,
+  "l1": 2rem,
+  "l2": 3rem,
+  "l3": 4rem,
 );
 
-@function space-st-x($space-stx) {
+@function sx($space-stx) {
   @return map-get($space-st-x, $space-stx);
 }
 
 // -------------------- Orientation
 //       y      = horizontal (right & left)
 $space-st-y: (
-  "l": 3rem,
-  "m": 2.5rem,
-  "s": 2rem,
-  "xs": 1.5rem,
+  "s1": 1.5rem,
+  "s2": 2rem,
+  "m1": 2.5rem,
+  "l2": 3rem,
 );
 
-@function space-st-y($space-sty) {
+@function sy($space-sty) {
   @return map-get($space-st-y, $space-sty);
 }
