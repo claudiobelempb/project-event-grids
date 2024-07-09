@@ -1,0 +1,19 @@
+@use '../../scss/general-styles/colors' as c;
+@use '../../scss/general-styles/typography' as f;
+
+.text {
+  font-size: f.fs('s2');
+  color: c.color("violet-700");
+  text-align: center;
+  margin-bottom: 4rem;
+
+  span {
+    display: block;
+  }
+}
+
+.sub-text {
+  font-size: f.fs('s2');
+  font-weight: f.fw('700');
+  color: rgba(c.color("violet-700"), 0.4);
+}

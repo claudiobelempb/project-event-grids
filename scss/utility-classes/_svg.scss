@@ -1,0 +1,7 @@
+@use "../general-styles/colors" as c;
+@use "../general-styles/typography" as f;
+
+.svg {
+  font-size: f.fs(m1);
+  color: c.color(gray-100);
+}

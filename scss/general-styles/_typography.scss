@@ -20,34 +20,34 @@
 //     xs     = extra small
 //     c      = customized
 
-$fs-d: (
-  "lc": calc(3rem + 3.5vw),
-  "l": calc(2rem + 3vw),
-  "mc": calc(2rem + 2.5vw),
-  "m": calc(1rem + 2vw),
-  "sc": calc(1rem + 1.5vw),
-  "s": calc(1rem + 1vw),
+$fdinamic: (
+  "l1": calc(2rem + 3vw),
+  "l2": calc(3rem + 3.5vw),
+  "m1": calc(1rem + 2vw),
+  "m2": calc(2rem + 2.5vw),
+  "s1": calc(1rem + 1vw),
+  "s2": calc(1rem + 1.5vw),
 );
 
-@function font-size-d($f-s-d) {
-  @return map-get($fs-d, $f-s-d);
+@function fd($f-s-d) {
+  @return map-get($fdinamic, $f-s-d);
 }
 
-$fs-st: (
-  "xl": 4rem,
-  "lc": 3.5rem,
-  "l": 3rem,
-  "mc": 2.5rem,
-  "m": 2rem,
-  "sc": 1.5rem,
-  "s": 1rem,
+$fstatic: (
+  "s1": 1rem,
+  "s2": 1.5rem,
+  "m1": 2rem,
+  "m2": 2.5rem,
+  "l1": 3rem,
+  "l2": 3.5rem,
+  "l3": 4rem,
 );
 
-@function font-size-st($f-s-st) {
-  @return map-get($fs-st, $f-s-st);
+@function fs($f-s-st) {
+  @return map-get($fstatic, $f-s-st);
 }
 
-$fw: (
+$fweight: (
   "100": 100,
   "300": 300,
   "400": 400,
@@ -56,6 +56,6 @@ $fw: (
   "900": 900,
 );
 
-@function font-weight($f-w) {
-  @return map-get($fw, $f-w);
+@function fw($f-w) {
+  @return map-get($fweight, $f-w);
 }

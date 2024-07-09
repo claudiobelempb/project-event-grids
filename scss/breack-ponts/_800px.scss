@@ -1,0 +1,7 @@
+@use "../general-styles/space" as s;
+
+@media screen and (max-width: 800px) {
+  .header {
+    background-color: green;
+  }
+}

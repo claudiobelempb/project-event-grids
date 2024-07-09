@@ -1,0 +1,15 @@
+@use "../general-styles/space" as s;
+@use "../general-styles/colors" as c;
+@use "../general-styles/typography" as f;
+
+.sd {
+  padding: s.sdx(m1) s.sdy(m1);
+}
+
+.sdy {
+  padding: 0 s.sdy(m1);
+}
+
+.sdx {
+  padding: s.sdx(m1) 0;
+}
