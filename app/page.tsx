@@ -1,3 +1,4 @@
+import { CountDown } from '@/components/CountDown';
 import { HeaderDefault } from '@/components/HeaderDefault';
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <main className='container'>
         <HeaderDefault />
+        <CountDown />
       </main>
     </>
   );

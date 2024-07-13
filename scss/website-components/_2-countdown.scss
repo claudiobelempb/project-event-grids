@@ -1,0 +1,83 @@
+@use '../../scss/general-styles/colors' as c;
+@use '../../scss/general-styles/space' as s;
+@use '../../scss/general-styles/typography' as f;
+
+.countdown {
+  background-image: url('/assets/images/countdown/bg.png');
+  background-color: c.color('gray-100');
+  padding-bottom: 0;
+
+  &__content {
+    background-color: c.color('violet-500');
+    border: 1rem solid rgba(c.color('gray-100'), 0.3);
+
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+    }
+
+    &::before {
+      content: '';
+      left: 0;
+      background-image: url('/assets/images/countdown/left-shape.png');
+    }
+
+    &::after {
+      content: '';
+      right: 0;
+      background-image: url('/assets/images/countdown/right-shape.png');
+    }
+
+    &--day,
+    &--hour,
+    &--minute,
+    &--second {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      z-index: 1;
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p:first-child {
+          font-size: f.fd('m1');
+          color: c.color('gray-100');
+          font-weight: f.fw('700');
+        }
+
+        p:last-child {
+          font-size: f.fd('s');
+          color: c.color('gray-100');
+          font-weight: f.fw('400');
+        }
+
+      }
+
+      p {
+        font-size: f.fd('m1');
+        color: c.color('gray-100');
+        font-weight: f.fw('700');
+      }
+
+    }
+
+  }
+}

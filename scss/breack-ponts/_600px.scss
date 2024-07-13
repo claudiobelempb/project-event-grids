@@ -4,6 +4,13 @@
 @use "../general-styles/typography" as f;
 
 @media screen and (max-width: 600px) {
+
+  /*--------------------------------- Utility Classes*/
+  .sd {
+    padding: s.sdx(s2) s.sdy(s2);
+  }
+
+  /*--------------------------------- Header*/
   .header {
     &__nav {
       flex-direction: column;
@@ -88,8 +95,40 @@
     }
   }
 
-  .sd {
-    padding: s.sdx(s2) s.sdy(s2);
+  /*--------------------------------- Countdown*/
+  .countdown {
+    padding: 0;
+
+    &__content {
+      flex-direction: column;
+      transform: translateY(0);
+
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+
+      &::after {
+        background-position: right center;
+      }
+
+      &--day,
+      &--hour,
+      &--minute,
+      &--second {
+        flex-direction: column;
+
+        div {
+          p:first-child {
+            font-size: f.fd('m2');
+          }
+        }
+      }
+    }
   }
 
 }
